@@ -14,8 +14,10 @@ for secs in range(N,0,-1):
     
 picture = st.camera_input("Take a picture", disabled=not enable)
 
-if picture:
-    st.image(picture)
+if enable:
+    picture = st.camera_input("Toma una foto")
+    if picture:
+        st.image(picture)
 
 
 
