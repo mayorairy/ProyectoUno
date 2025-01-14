@@ -15,3 +15,13 @@ if img_file_buffer is not None:
     # Check the type of bytes_data:
     # Should output: <class 'bytes'>
     st.write(type(bytes_data))
+
+import time 
+def count_down(ts)
+    while ts:
+        mins, secs = divmod (ts,60)
+        time_now= '{:02d}:
+'{:02d}:.format(mins,secs)
+    print(f"{time_now}")
+    time.sleep(1)
+    ts -= 1
