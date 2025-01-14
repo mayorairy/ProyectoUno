@@ -4,7 +4,6 @@ st.write ("Hola mundo")
 enable = st.checkbox("Activar camera")
 
 import time
-st.set_page_config()
 
 ph = st.empty()
 N = 5*60
