@@ -17,7 +17,7 @@ if img_file_buffer is not None:
     st.write(type(bytes_data))
 
 import time 
-def count_down(ts)
+def count_down(ts):
     while ts:
         mins, secs = divmod (ts,60)
         time_now= f"{mm:02d}:
