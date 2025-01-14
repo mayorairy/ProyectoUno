@@ -12,18 +12,18 @@ for secs in range(10,0,-1):
     time.sleep(1)
 
 if enable:
-    picture = st.camera_input("Toma una foto")
-    if picture:
-        st.image(picture)
+#    picture = st.camera_input("Toma una foto")
+#    if picture:
+#        st.image(picture)
 
-img_file_buffer = st.camera_input("Take a picture")
+    img_file_buffer = st.camera_input("Take a picture")
 
-if img_file_buffer is not None:
-    # To read image file buffer as bytes:
-    bytes_data = img_file_buffer.getvalue()
+    if img_file_buffer is not None:
+        # To read image file buffer as bytes:
+        bytes_data = img_file_buffer.getvalue()
     # Check the type of bytes_data:
     # Should output: <class 'bytes'>
-    st.write(type(bytes_data))
+        st.write(type(bytes_data))
 
 
 
