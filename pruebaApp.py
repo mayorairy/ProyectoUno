@@ -20,7 +20,7 @@ import time
 def count_down(ts)
     while ts:
         mins, secs = divmod (ts,60)
-        time_now= '{:02d}:
+        time_now= f"{mm:02d}:
 '{:02d}:.format(mins,secs)
     print(f"{time_now}")
     time.sleep(1)
