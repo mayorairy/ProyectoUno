@@ -16,7 +16,7 @@ if enable:
 #    if picture:
 #        st.image(picture)
 
-    img_file_buffer = st.camera_input("Take a picture", disable= True)
+    img_file_buffer = st.camera_input("Take a picture", disabled= True)
     
 
     if img_file_buffer is not None:
