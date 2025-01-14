@@ -4,13 +4,14 @@ st.write ("Hola mundo")
 
 enable = st.checkbox("Activar camera")
 
-def count_down(ts):
-    while ts:
-        mins, secs = divmod (ts,60)
-        time_now='{:02d}:{:02d}'.format(mins,secs)
-    print(f"{time_now}")
+st.set_page_config()
+
+ph = st.empty()
+N = 5*60
+for secs in range(N,0,-1):
+    mm, ss = secs//60, secs%60
+    ph.metric("Countdown", f"{mm:02d}:{ss:02d}")
     time.sleep(1)
-    ts -= 1
 
 picture = st.camera_input("Take a picture", disabled=not enable)
 
