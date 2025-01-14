@@ -2,7 +2,17 @@ import streamlit as st
 st.write ("Hola mundo")
 
 enable = st.checkbox("Activar camera")
-picture = st.camera_input("Tomar foto", disabled=not enable)
+
+import time 
+def count_down(ts):
+    while ts:
+        mins, secs = divmod (ts,60)
+        time_now='{:02d}:{:02d}'.format(mins,secs)
+    print(f"{time_now}")
+    time.sleep(1)
+    ts -= 1
+
+picture = st.camera_input("Take a picture", disabled=not enable)
 
 if picture:
     st.image(picture)
@@ -16,12 +26,4 @@ if img_file_buffer is not None:
     # Should output: <class 'bytes'>
     st.write(type(bytes_data))
 
-import time 
-def count_down(ts):
-    while ts:
-        mins, secs = divmod (ts,60)
-        time_now= '{mm:02d}:
-'{mm:02d}:.format(mins,secs)
-    print(f"{time_now}")
-    time.sleep(1)
-    ts -= 1
+
