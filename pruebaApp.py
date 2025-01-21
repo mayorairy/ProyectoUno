@@ -1,11 +1,8 @@
 import streamlit as st
 import time
 
-pip install streamlit-navigation-bar
-from streamlit_navigation_bar import st_navbar
-
-page = st_navbar(["Home", "Documentation", "Examples", "Community", "About"])
-st.write(page)
+with st.sidebar:
+    st.[element_name]
 
 st.button("Ver más", type="primary")
 
