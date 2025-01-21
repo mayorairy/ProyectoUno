@@ -1,15 +1,28 @@
 import streamlit as st
+import pandas as pd
+import plotly.express as px 
 import time
 
-st.title("Bienvenido!")
+def pagina_principal():
+    st.write("Home")
+    st.title("Bienvenido!")
+    st.write("Usa le menú de la izquierda para navegar entre las páginas!")
 
-with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
+def buscar():
+    text_input = st.text_input(
+        "Realizar busqueda 👇",
+        label_visibility=st.session_state.visibility,
+        disabled=st.session_state.disabled,
+        placeholder=st.session_state.placeholder,
+    )
 
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")
+    if text_input:
+        st.write("You entered: ", text_input)
+    
+
+st.sidebar.title("Navegación")
+pagina = st.sidebar.selectbox("Selecciona una página",["Buscar", "Perfil", "Practicar", "Contacto"])
+
 
 
 col1, col2, col3, col4 = st.columns(4)
