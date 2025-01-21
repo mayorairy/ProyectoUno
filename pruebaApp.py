@@ -7,7 +7,7 @@ st.title("Bienvenido!")
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.header("¿Qúe es la discapacidad?")
+    st.subheader("¿Qúe es la discapacidad?")
     st.image("https://i.pinimg.com/736x/cf/66/33/cf66334166ddd4c120148dc07c492449.jpg")
 
 
