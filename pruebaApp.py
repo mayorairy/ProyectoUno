@@ -1,14 +1,15 @@
 import streamlit as st
 import time
-import streamlit as st
 
-st.header("_Streamlit_ is :blue[cool] :sunglasses:")
-st.header("This is a header with a divider", divider="gray")
-st.header("These headers have rotating dividers", divider=True)
-st.header("One", divider=True)
-st.header("Two", divider=True)
-st.header("Three", divider=True)
-st.header("Four", divider=True)
+pip install streamlit-navigation-bar
+from streamlit_navigation_bar import st_navbar
+
+page = st_navbar(["Home", "Documentation", "Examples", "Community", "About"])
+st.write(page)
+
+st.button("Ver más", type="primary")
+
+
 
 st.write ("Hola mundo")
 enable = st.checkbox("Enable camera")
