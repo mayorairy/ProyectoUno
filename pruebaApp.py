@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.header("¿Qúe es la discapacidad?")
@@ -14,9 +14,12 @@ with col2:
     
 
 with col3:
-    st.header("An owl")
-    st.image("https://static.streamlit.io/examples/owl.jpg")
-    
+    st.header("Modelos y ayudas técnicas para la intervención")
+    st.image("https://i.pinimg.com/736x/9d/3a/35/9d3a3531044579ff2381b7bcba1868fd.jpg")
+
+with col4:
+    st.header("Un bilingüismo silencioso")
+    st.image("https://i.pinimg.com/736x/9f/ce/c2/9fcec281834ca98e08f1587e8943e983.jpg")
 
 
 
