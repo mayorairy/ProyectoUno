@@ -42,6 +42,13 @@ def buscar():
 
     if text_input:
         st.write("You entered: ", text_input)
+
+def practicar():
+    enable = st.checkbox("Enable camera")
+    picture = st.camera_input("Take a picture", disabled=not enable)
+
+    if picture:
+        st.image(picture)
     
 
 st.sidebar.title("Navegación")
@@ -50,18 +57,15 @@ pagina = st.sidebar.selectbox("Selecciona una página",["Principal", "Buscar", "
 if pagina == "Principal":
     pagina_principal()
 
+elif pagina == "Buscar":
+    buscar()
+
+elif pagina == "Practicar":
+    practicar()
 
 
 
 
-
-
-
-enable = st.checkbox("Enable camera")
-picture = st.camera_input("Take a picture", disabled=not enable)
-
-if picture:
-    st.image(picture)
 
 
 
