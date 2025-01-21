@@ -5,25 +5,7 @@ def pagina_principal():
     st.write("Home")
     st.title("Bienvenido!")
     st.write("Usa le menú de la izquierda para navegar entre las páginas!")
-
-def buscar():
-    text_input = st.text_input(
-        "Realizar busqueda 👇",
-        label_visibility=st.session_state.visibility,
-        disabled=st.session_state.disabled,
-        placeholder=st.session_state.placeholder,
-    )
-
-    if text_input:
-        st.write("You entered: ", text_input)
-    
-
-st.sidebar.title("Navegación")
-pagina = st.sidebar.selectbox("Selecciona una página",["Buscar", "Perfil", "Practicar", "Contacto"])
-
-
-
-col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.subheader("¿Qúe es la discapacidad?")
@@ -48,6 +30,27 @@ with col4:
     st.link_button("Ver más", "https://streamlit.io/gallery")
 
 st.button("Comenzar a practicar LSM", type="primary")
+
+def buscar():
+    text_input = st.text_input(
+        "Realizar busqueda 👇",
+        label_visibility=st.session_state.visibility,
+        disabled=st.session_state.disabled,
+        placeholder=st.session_state.placeholder,
+    )
+
+    if text_input:
+        st.write("You entered: ", text_input)
+    
+
+st.sidebar.title("Navegación")
+pagina = st.sidebar.selectbox("Selecciona una página",["Principal", "Buscar", "Perfil", "Practicar", "Contacto"])
+
+if pagina == "Principal":
+    pagina_principal()
+
+
+
 
 
 
