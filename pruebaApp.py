@@ -9,14 +9,14 @@ with col1:
     st.button("Ver más", type="primary")
 
 with col2:
-    st.header("A dog")
-    st.image("https://static.streamlit.io/examples/dog.jpg")
-    st.button("Ver más", type="primary")
+    st.header("Academia de Lengua de Señas Mexicana")
+    st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLPDBoTi6oPkFB26U2bZSFX5xrVgxGI72FAw&s")
+    
 
 with col3:
     st.header("An owl")
     st.image("https://static.streamlit.io/examples/owl.jpg")
-    st.button("Ver más", type="primary")
+    
 
 
 
