@@ -3,6 +3,14 @@ import time
 
 st.title("Bienvenido!")
 
+with st.sidebar:
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
+
+    with st.spinner("Loading..."):
+        time.sleep(5)
+    st.success("Done!")
+
 
 col1, col2, col3, col4 = st.columns(4)
 
