@@ -32,18 +32,7 @@ with col4:
 
 st.button("Comenzar a practicar LSM", type="primary")
 
-def buscar():
-    text_input = st.text_input(
-        "Realizar busqueda 👇",
-        label_visibility=st.session_state.visibility,
-        disabled=st.session_state.disabled,
-        placeholder=st.session_state.placeholder,
-    )
-
-    if text_input:
-        st.write("You entered: ", text_input)
-
-def practicar():
+def practicar_lsm():
     enable = st.checkbox("Enable camera")
     picture = st.camera_input("Take a picture", disabled=not enable)
 
@@ -55,13 +44,10 @@ st.sidebar.title("Navegación")
 pagina = st.sidebar.selectbox("Selecciona una página",["Principal", "Buscar", "Perfil", "Practicar", "Contacto"])
 
 if pagina == "Principal":
-    pagina_principal()
-
-elif pagina == "Buscar":
-    buscar()
+    pagina_principal() 
 
 elif pagina == "Practicar":
-    practicar()
+    practicar_lsm()
 
 
 
