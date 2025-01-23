@@ -22,7 +22,7 @@ def pagina_principal():
         st.link_button("Ver más", "https://streamlit.io/gallery")
             
         
-     with col3:
+    with col3:
         st.subheader("Modelos y ayudas técnicas para la intervención")
         st.image("https://i.pinimg.com/736x/9d/3a/35/9d3a3531044579ff2381b7bcba1868fd.jpg")
         st.link_button("Ver más", "https://streamlit.io/gallery")
