@@ -35,6 +35,10 @@ def pagina_principal():
     container.button("Comenzar a practicar LSM", type="primary")
 
 def practicar_lsm():
+    container = st.container(border=True)   
+    container.title("Abecedario")
+    container.write("Practicar LSM")
+    container.write("Activa la camara para comenzar a practicar")
     enable = st.checkbox("Enable camera")
     picture = st.camera_input("Take a picture", disabled=not enable)
 
