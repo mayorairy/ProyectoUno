@@ -32,7 +32,7 @@ def pagina_principal():
         st.image("https://i.pinimg.com/736x/9f/ce/c2/9fcec281834ca98e08f1587e8943e983.jpg")
         st.link_button("Ver más", "https://streamlit.io/gallery")
         
-    st.button("Comenzar a practicar LSM", type="primary")
+st.button("Comenzar a practicar LSM", type="primary")
 
 def practicar_lsm():
     enable = st.checkbox("Enable camera")
