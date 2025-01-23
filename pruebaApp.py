@@ -33,6 +33,8 @@ def pagina_principal():
         st.link_button("Ver más", "https://streamlit.io/gallery")
         
     container.button("Comenzar a practicar LSM", type="primary")
+    if container.button("Comenzar a practicar LSM"):
+        practicar_lsm()
 
 def practicar_lsm():
     container = st.container(border=True)   
