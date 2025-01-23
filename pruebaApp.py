@@ -2,11 +2,13 @@ import streamlit as st
 import time
 
 def pagina_principal():
-    st.write("Home")
-    st.title("Bienvenido!")
-    st.write("Usa le menú de la izquierda para navegar entre las páginas!")
+    container = st.container(border=True)   
+    container.write("Home")
+    container.title("Bienvenido!")
+    container.write("Usa le menú de la izquierda para navegar entre las páginas!")
     
-        col1, col2, col3, col4 = st.columns(4)
+ 
+    container.col1, container.col2, container.col3, container.col4 = st.columns(4)
         
         with col1:
             st.subheader("¿Qúe es la discapacidad?")
