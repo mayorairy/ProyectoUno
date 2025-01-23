@@ -17,8 +17,8 @@ def pagina_principal():
         
         
     with col2:
-         st.subheader("Academia de Lengua de Señas Mexicana")
-         st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLPDBoTi6oPkFB26U2bZSFX5xrVgxGI72FAw&s")
+        st.subheader("Academia de Lengua de Señas Mexicana")
+        st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLPDBoTi6oPkFB26U2bZSFX5xrVgxGI72FAw&s")
         st.link_button("Ver más", "https://streamlit.io/gallery")
             
         
